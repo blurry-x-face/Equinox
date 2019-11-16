@@ -1,0 +1,369 @@
+@spacer: 1rem;
+@fast: 0.3s;
+@easing: cubic-bezier(0.55, 0, 0.1, 1);
+
+body {
+  background-color: #282a2d;
+  background-repeat: repeat;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  overflow: hidden;
+  perspective: 1000px;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(233, 233, 233, 0.397);
+  border-radius: 50%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #84118f;
+}
+
+.site-wrap {
+  transition: transform @fast*2 @easing;
+
+  &.show-all {
+    transform: rotateY(-15deg) scale(0.2);
+  }
+}
+
+.panel-wrap {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.panel-wrap {
+  perspective: 2000px;
+  transition: transform @fast @easing;
+
+  &.animate--shrink,
+  &.animate--tilt,
+  &.animate--tilt2 {
+    transition: transform @fast @easing @fast;
+  }
+}
+
+.panel {
+  height: 100vh;
+  position: absolute;
+  transition: transform @fast @easing;
+  width: 100vw;
+  will-change: transform;
+
+  .panel-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 0px 30px;
+
+    .events {
+      height: 500px;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 0px;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .event-card {
+      height: 400px;
+      width: 400px;
+      margin-top: 40px;
+      background: url("./assets/img/Glow\ in\ the\ Dark\ Party\ Invitation\ \(3\).png")
+        center;
+      margin-left: 35px;
+      box-shadow: #f0f8ff87 0px 4px 20px;
+      transition: all 0.8s @easing;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    .card-1 {
+      background: url("./assets/img/Glow\ in\ the\ Dark\ Party\ Invitation\ \(3\).png")
+        no-repeat center;
+      background-size: cover;
+    }
+    .card-2 {
+      background: url("./assets/img/Art\ Event\ Flyer\ \(1\).png") no-repeat
+        center;
+      background-size: cover;
+    }
+    .card-3 {
+      background: url("./assets/img/final\ quiz\ \(2\)\ \(2\).jpg") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+
+  &:before {
+    background-color: transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color @fast @easing;
+    z-index: 2;
+
+    .show-all & {
+      pointer-events: all;
+    }
+  }
+  &:hover {
+    .show-all & {
+      &:before {
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+      }
+    }
+  }
+  .animate & {
+    .animate--shrink& {
+      transform: scale(0.9);
+    }
+    .animate--tilt& {
+      transform: scale(0.6) rotateY(-25deg);
+    }
+    .animate--tilt2& {
+      transform: scale(0.8) rotateX(25deg);
+    }
+  }
+  h1 {
+    cursor: default;
+    line-height: 1;
+    text-align: center;
+  }
+  &[data-x-pos="-2"] {
+    left: -200%;
+  }
+  &[data-x-pos="-1"] {
+    left: -100%;
+  }
+  &[data-x-pos="1"] {
+    left: 100%;
+  }
+  &[data-x-pos="2"] {
+    left: 200%;
+  }
+  &[data-y-pos="-2"] {
+    top: 200%;
+  }
+  &[data-y-pos="-1"] {
+    top: 100%;
+  }
+  &[data-y-pos="1"] {
+    top: -100%;
+  }
+  &[data-y-pos="2"] {
+    top: -200%;
+  }
+}
+
+.panel__zoom {
+  cursor: pointer;
+  left: 50%;
+  opacity: 0.2;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
+  transition: opacity @fast @easing;
+  user-select: none;
+  z-index: 10;
+
+  &:hover {
+    opacity: 1;
+  }
+  .show-all & {
+    pointer-events: none;
+  }
+}
+
+.panel__nav {
+  cursor: pointer;
+  opacity: 0.2;
+  position: absolute;
+  transition: opacity @fast @easing;
+  user-select: none;
+  will-change: opacity;
+
+  &--up {
+    left: 50%;
+    top: @spacer;
+    transform: translateX(-50%);
+  }
+  &--left {
+    left: @spacer;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+  }
+  &--left-top {
+    left: @spacer;
+    top: @spacer;
+  }
+  &--left-down {
+    bottom: @spacer;
+    left: @spacer;
+  }
+  &--right {
+    right: @spacer;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg) translateX(100%);
+    transform-origin: top right;
+  }
+  &--right-top {
+    right: @spacer;
+    top: @spacer;
+  }
+  &--right-down {
+    bottom: @spacer;
+    right: @spacer;
+  }
+  &--down {
+    bottom: @spacer;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.panel__animation-list {
+  font-size: 3.3vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.2;
+    position: relative;
+    transition: opacity @fast @easing;
+    user-select: none;
+
+    &:after {
+      border-bottom: 0.3vmin solid transparent;
+      bottom: 0;
+      content: "";
+      left: -1px;
+      position: absolute;
+      right: 0;
+      transition: border-color @fast @easing;
+      width: 100%;
+    }
+    &.active,
+    &:hover {
+      opacity: 1;
+
+      &:after {
+        border-color: white;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  /* .hide {
+    height: 1000vh;
+    width: 1000vw;
+    background: #84118f;
+    z-index: 1999999999;
+  } */
+}
+
+// retf
+#equinox h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 75px;
+  font-family: "Montserrat", sans-serif;
+  transition: 1s box-shadow;
+  flex-direction: column;
+}
+
+#equinox h1 span {
+  margin-top: 15px;
+  font-size: 12px;
+}
+// Moon
+@keyframes cresent {
+  0% {
+    transform: translate(-30px, 30px) scale(0.9);
+    box-shadow: none;
+  }
+  50% {
+    transform: translate(0px, 0px) scale(1.02);
+    box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #c7938b;
+    background-color: #efdbd8;
+  }
+  100% {
+    transform: translate(30px, -30px) scale(0.9);
+    box-shadow: none;
+  }
+}
+body {
+  background-size: contain;
+}
+
+.moon {
+  // background-image: linear-gradient(30deg, #13223f, #0e1a30);
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  position: relative;
+}
+.moon::before {
+  content: "";
+  background-color: #c7938b;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 306px !important;
+  z-index: -1;
+  animation: 3.2s cresent linear infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .moon {
+    width: 160px;
+    height: 160px;
+  }
+}
+html {
+  background: #282a2d;
+}

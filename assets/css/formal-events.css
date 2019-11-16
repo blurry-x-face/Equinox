@@ -1,0 +1,92 @@
+.informals {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  overflow: auto;
+  height: 80%; }
+
+#informals .container {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background: url("http://staging.technocratshorizons.com/ticketbooth/ticketing/wp-content/uploads/2016/03/4.png");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: #f7d5b0 0px 0px 20px;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  #informals .container:hover {
+    box-shadow: inset rgba(124, 199, 212, 0.33) 0px 10px 20px; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #fef5df;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif; }
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px; }
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s; }
+  .head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #fef5df;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all 0.5s; }
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s; }
+  .price .old {
+    text-decoration: line-through;
+    color: #b3b3b3; }
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s; }
+  .cart i {
+    font-size: 16px; }
+  .cart span {
+    margin-left: 10px; }
+
+.container:hover .overlay {
+  opacity: 1; }
+  .container:hover .overlay .head {
+    transform: translateY(0px); }
+  .container:hover .overlay hr {
+    width: 75px;
+    transition-delay: 0.4s; }
+  .container:hover .overlay .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1; }
+  .container:hover .overlay .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1; }
+
+/*# sourceMappingURL=formal-events.css.map */
