@@ -31,7 +31,15 @@
   <body>
     <div class="hide"></div>
     <div class="site-wrap">
-      <div class="panel-wrap animate--none">
+      <div class="panel-wrap animate--shrink">
+        <div class="hero">
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+        </div>
         <div class="panel" data-x-pos="0" data-y-pos="0">
           <span class="panel__nav panel__nav--up js-up">Sponsors</span>
           <span class="panel__nav panel__nav--left js-left">Formal Events</span>
@@ -683,10 +691,10 @@
                 </svg>
               </div>
             </section>
-            <span class="view-all panel__zoom js-zoom">View All</span>
+            <span class="view-all panel__zoom js-zoom"><h4>View All</h4></span>
           </div>
         </div>
-        <div class="panel" data-x-pos="0" data-y-pos="1">
+        <div class="panel" data-x-pos="0" id="sponsors-section" data-y-pos="1">
           <span class="panel__nav panel__nav--right-down js-down js-right"
             >Workshops</span
           >
@@ -694,8 +702,26 @@
             >Formal Events</span
           >
           <span class="panel__nav panel__nav--down js-down">Main</span>
-          <div class="panel-content">
+          <div class="panel-content" id="sponsors">
             <h1>Our Sponsors</h1>
+            <div class="sponsors">
+              <img
+                src="https://hackofiesta.github.io/assets/images/sponsor-logo-1.png"
+              />
+              <img
+                src="https://hackofiesta.github.io/assets/images/sponsor-logo-2.png"
+              />
+              <img src="https://getsetfoss.tech/assets/img/code.png" />
+              <img
+                src="https://hackofiesta.github.io/assets/images/axios.png"
+              />
+              <img
+                src="https://hackofiesta.github.io/assets/images/sponsor-logo-7.png"
+              />
+              <img
+                src="https://hackofiesta.github.io/assets/images/sponsor-logo-8.png"
+              />
+            </div>
           </div>
         </div>
         <div class="panel" data-x-pos="-1" data-y-pos="0">
@@ -1018,9 +1044,7 @@
           <span class="panel__nav panel__nav--left-top js-up js-left"
             >Sponsors</span
           >
-          <span class="panel__nav panel__nav--up js-up js-left"
-            >Sponsors</span
-          >
+          <span class="panel__nav panel__nav--up js-up js-left">Sponsors</span>
           <span class="panel__nav panel__nav--left js-left">Main</span>
           <span class="panel__nav panel__nav--left-down js-down js-left"
             >About</span
