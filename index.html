@@ -22,7 +22,40 @@
     <link rel="stylesheet" href="./assets/css/bitsbybits.css" />
     <link rel="stylesheet" href="./assets/css/formal-events.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
-    <title>TechFest</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="assets/img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>
+      Equinox 7 Feb - 9 Feb 2020 | Indian Institute of Information Technology,
+      Lucknow | Axios, IIIT Lucknow
+    </title>
     <script
       src="https://kit.fontawesome.com/742a48addb.js"
       crossorigin="anonymous"
@@ -30,34 +63,34 @@
   </head>
   <body>
     <div class="hide"></div>
+    <div class="hero">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
     <div class="site-wrap">
       <div class="panel-wrap animate--shrink">
-        <div class="hero">
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-          <div class="cube"></div>
-        </div>
         <div class="panel" data-x-pos="0" data-y-pos="0">
-          <span class="panel__nav panel__nav--up js-up">Sponsors</span>
+          <span class="panel__nav panel__nav--up js-up">About</span>
           <span class="panel__nav panel__nav--left js-left">Formal Events</span>
           <span class="panel__nav panel__nav--right js-right">Workshops</span>
           <span class="panel__nav panel__nav--right-down js-down js-right"
             >Informal Events</span
           >
           <span class="panel__nav panel__nav--left-down js-down js-left"
-            >Contact Us</span
+            >Team</span
           >
-          <span class="panel__nav panel__nav--down js-down">About</span>
+          <span class="panel__nav panel__nav--down js-down">Sponsors</span>
           <div class="panel-content" id="equinox">
             <h1 class="">
               <img
                 src="assets/img/Equinox_logo/equinox_logo_white.png"
                 style="height: 100px;position: absolute;"
               />
-              <span class="tag-line">Decyphering the origins</span>
+              <span class="tag-line">Deciphering the origins</span>
             </h1>
             <section class="background">
               <div class="hover">
@@ -66,6 +99,7 @@
                   width="438"
                   height="548"
                   viewBox="0 0 438 548"
+                  id="equinox-illustration"
                 >
                   <defs>
                     <radialGradient
@@ -175,21 +209,22 @@
                       />
                     </linearGradient>
                   </defs>
+                  <!-- #f5bf1a #B03B25 -->
                   <g fill="none" fill-rule="evenodd">
                     <g transform="matrix(-1 0 0 1 438 114)">
                       <path
                         d="M427 149c-6.28125 27.332487-15.852679 94.895939-25.723214 121C385.125 265.700508 376.75 220.862944 360 212.878173c12.5625-20.883249 18.84375-30.71066 29.611607-48.82995C404.866071 157.906091 412.34375 154.835025 427 149z"
-                        fill="#B03B25"
+                        fill="#f5bf1a"
                         fill-rule="nonzero"
                       />
                       <path
                         d="M14 141c.6233766 32.81978 7.4805195 105.685714 17.1428571 137C42.3636364 264.149451 48.5974026 215.672527 62 200.015385c-8.1038961-17.764836-15.2727273-35.83077-21.1948052-54.197803C29.8961039 144.010989 24.5974026 142.806593 14 141z"
-                        fill="#B03B25"
+                        fill="#f5bf1a"
                         fill-rule="nonzero"
                       />
                       <path
                         d="M364.086458 198.594512c-8.128125 9.054878-12.041666 54.631098-20.470833 63.987805-9.03125 21.731707-18.0625 43.463415-26.792708 65.496951-18.664584-9.356707-36.426042-20.222561-53.886459-31.993902-13.245833 7.847561-20.169791 11.771341-33.415625 19.015244-8.730208 11.771341-13.245833 17.807927-21.675 29.579268-10.8375 1.810976-16.557291 2.414634-27.394791 3.320122C172.925 321.137195 165.7 293.972561 159.378125 266.807927c-8.730208 8.753049-13.245833 13.280488-21.675 21.731707-7.526042 6.942073-11.439583 10.564025-18.664583 17.204268-3.311459 5.734757-4.816667 8.753049-8.128125 14.487805C99.1697917 290.954268 88.6333333 220.628049 79 190.746951 89.5364583 174.75 94.9552083 166.60061 106.09375 150c43.048958 7.545732 86.097917 15.091463 129.447917 21.731707C266.85 176.560976 345.722917 173.240854 368 198.594512h-3.913542z"
-                        fill="#B03B25"
+                        fill="#f5bf1a"
                         fill-rule="nonzero"
                       />
                       <path
@@ -694,45 +729,55 @@
             <span class="view-all panel__zoom js-zoom"><h4>View All</h4></span>
           </div>
         </div>
-        <div class="panel" data-x-pos="0" id="sponsors-section" data-y-pos="1">
-          <span class="panel__nav panel__nav--right-down js-down js-right"
+        <div class="panel" data-x-pos="0" id="sponsors-section" data-y-pos="-1">
+          <!-- <span class="panel__nav panel__nav--right-down js-down js-right"
             >Workshops</span
           >
           <span class="panel__nav panel__nav--left-down js-down js-left"
             >Formal Events</span
+          > -->
+          <span class="panel__nav panel__nav--up js-up">Main</span>
+          <span class="panel__nav panel__nav--left-top js-up js-left"
+            >Informal Events</span
           >
-          <span class="panel__nav panel__nav--down js-down">Main</span>
+          <span class="panel__nav panel__nav--right-top js-up js-right"
+            >Workshops</span
+          >
+          <span class="panel__nav panel__nav--left js-left">Team</span>
+          <span class="panel__nav panel__nav--right js-right"
+            >Informal Events</span
+          >
           <div class="panel-content" id="sponsors">
-            <h1>Our Sponsors</h1>
-            <div class="sponsors">
-              <img
-                src="https://hackofiesta.github.io/assets/images/sponsor-logo-1.png"
-              />
-              <img
-                src="https://hackofiesta.github.io/assets/images/sponsor-logo-2.png"
-              />
-              <img src="https://getsetfoss.tech/assets/img/code.png" />
-              <img
-                src="https://hackofiesta.github.io/assets/images/axios.png"
-              />
-              <img
-                src="https://hackofiesta.github.io/assets/images/sponsor-logo-7.png"
-              />
-              <img
-                src="https://hackofiesta.github.io/assets/images/sponsor-logo-8.png"
-              />
+            <div>
+              <h1>Our Sponsors</h1>
+              <div class="sponsors">
+                <img
+                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-1.png"
+                />
+                <img
+                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-2.png"
+                />
+                <img src="https://getsetfoss.tech/assets/img/code.png" />
+                <img
+                  src="https://hackofiesta.github.io/assets/images/axios.png"
+                />
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>Want to sponsor us? Shoot us an E-mail</h3>
+              <a href="mailto:equinox@iiitl.ac.in">equinox@iiitl.ac.in</a>
             </div>
           </div>
         </div>
         <div class="panel" data-x-pos="-1" data-y-pos="0">
           <span class="panel__nav panel__nav--right-top js-up js-right"
-            >Sponsorship</span
+            >About</span
           >
           <span class="panel__nav panel__nav--right js-right">Main</span>
           <span class="panel__nav panel__nav--right-down js-down js-right"
-            >About</span
+            >Sponsors</span
           >
-          <span class="panel__nav panel__nav--down js-down">Contact Us</span>
+          <span class="panel__nav panel__nav--down js-down">Team</span>
           <div class="panel-content" style="justify-content: center">
             <h1>Formal Events</h1>
             <div class="informals" id="informals">
@@ -840,9 +885,9 @@
           <span class="panel__nav panel__nav--right-top js-up js-right"
             >Main</span
           >
-          <span class="panel__nav panel__nav--right js-right">About</span>
+          <span class="panel__nav panel__nav--right js-right">Sponsors</span>
           <div class="panel-content" style="justify-content: center;">
-            <h1>Contact Us</h1>
+            <h1>Team</h1>
             <div class="contact-container">
               <div class="contact-card">
                 <img
@@ -886,7 +931,7 @@
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Govind Dixit</h3>
-                  <div class="desc">Festival Secretary</div>
+                  <div class="desc">Festival Lead</div>
                   <div class="card-footer">
                     <a href="#"><i class="far fa-envelope"></i></a
                     ><a href="tel:+917007238057"
@@ -902,8 +947,8 @@
                 />
                 <div class="box-content">
                   <div class="empty"></div>
-                  <h3 class="title">Saksham Varshaney</h3>
-                  <div class="desc">Festival Cordinator</div>
+                  <h3 class="title">Saksham Varshney</h3>
+                  <div class="desc">Festival Coordinator</div>
                   <div class="card-footer">
                     <a href="#"><i class="far fa-envelope"></i></a
                     ><a href="tel:+917007238057"
@@ -920,7 +965,7 @@
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Nishant Raj Lather</h3>
-                  <div class="desc">Festival Cordinator</div>
+                  <div class="desc">Festival Coordinator</div>
                   <div class="card-footer">
                     <a href="#"><i class="far fa-envelope"></i></a
                     ><a href="tel:+917007238057"
@@ -937,7 +982,7 @@
           <span class="panel__nav panel__nav--left-top js-up js-left"
             >Main</span
           >
-          <span class="panel__nav panel__nav--left js-left">About</span>
+          <span class="panel__nav panel__nav--left js-left">Sponsors</span>
           <div class="panel-content" style="justify-content: center">
             <h1>Informal Events</h1>
             <div class="informals" id="informals">
@@ -1042,12 +1087,12 @@
         </div>
         <div class="panel" data-x-pos="1" data-y-pos="0">
           <span class="panel__nav panel__nav--left-top js-up js-left"
-            >Sponsors</span
+            >About</span
           >
-          <span class="panel__nav panel__nav--up js-up js-left">Sponsors</span>
+          <span class="panel__nav panel__nav--up js-up js-left">About</span>
           <span class="panel__nav panel__nav--left js-left">Main</span>
           <span class="panel__nav panel__nav--left-down js-down js-left"
-            >About</span
+            >Sponsors</span
           >
           <span class="panel__nav panel__nav--down js-down"
             >Informal Events</span
@@ -1150,20 +1195,72 @@
             </div>
           </div>
         </div>
-        <div class="panel" data-x-pos="0" data-y-pos="-1">
-          <span class="panel__nav panel__nav--up js-up">Main</span>
-          <span class="panel__nav panel__nav--left-top js-up js-left"
-            >Informal Events</span
-          >
-          <span class="panel__nav panel__nav--right-top js-up js-right"
+        <div class="panel" data-x-pos="0" data-y-pos="1">
+          <span class="panel__nav panel__nav--right-down js-down js-right"
             >Workshops</span
           >
-          <span class="panel__nav panel__nav--left js-left">Contact Us</span>
-          <span class="panel__nav panel__nav--right js-right"
-            >Informal Events</span
+          <span class="panel__nav panel__nav--left-down js-down js-left"
+            >Formal Events</span
           >
-          <div class="panel-content">
-            <h1>About</h1>
+          <span class="panel__nav panel__nav--down js-down">Main</span>
+          <div
+            class="panel-content"
+            id="about-us"
+            style="justify-content: center;"
+          >
+            <div class="about-us-content">
+              <h1>Deciphering the origins</h1>
+              <div class="about-us-para">
+                <img
+                  src="./assets/img/undraw_celebrating_bol5.svg"
+                  alt="about"
+                  style="height: 300px"
+                />
+                <p>
+                  Equinox is the Annual technical fest of the
+                  <b>Indian Institute of Information Technology Lucknow</b>. It
+                  has been brought into existence with the aim of providing a
+                  platform for the Indian student community to develop and
+                  showcase their technical prowess in a grand three-day event on
+                  the campus of IIIT Lucknow attracting students from all over
+                  India.
+                  <br />
+                  <br />
+                  A journey of a thousand miles begins with a single step. a
+                  melting pot of intellectuals and professionals, a launchpad
+                  for upcoming technocrats, a spectacular showcase of talent, an
+                  epitome of incredible technical experience: where you can
+                  never see it all, but what you do acquire lasts a lifetime,
+                  where great ideas are born and memories are made amidst the
+                  gleam of several lines of code as the nights intensify.
+                  <br />
+                  <br />
+                  Equinox aims to explore the various aspects of technology and
+                  the profound impacts they have on our lives. We hope to
+                  constantly grow, evolve, and push the boundaries of what a
+                  college fest can be. With something to offer for everyone,
+                  Equinox is the ideal destination for all technophiles: young
+                  or old, beginner or expert, to witness, learn and experience
+                  the wonders of technology.
+                  <br />
+                  <br />
+                  This year marks the 1st Edition of Equinox, IIIT Lucknow. The
+                  fest shall take place from<b>
+                    7th to 9th of February, 2020 at IIIT Lucknow</b
+                  >, India. Boasting of a roster of exciting and engaging
+                  events, the first edition of Equinox promises to be the
+                  grandest, greatest and the most magnificent beginning that a
+                  fest could possibly have.
+                  <br />
+                  <br />
+                  So grab your friends, mark your calendars, and gear up for the
+                  newest entrant in list of technical festivals.
+                  <br />
+                  <br />
+                  <b>Welcome to Equinox 2019-2020: Deciphering the Origins!</b>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
