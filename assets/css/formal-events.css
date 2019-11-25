@@ -19,6 +19,9 @@
   #informals .container:hover {
     box-shadow: inset rgba(124, 199, 212, 0.33) 0px 10px 20px; }
 
+#hackofiesta {
+  background: url("../img/events/Hackofiesta.png"); }
+
 .overlay {
   width: 100%;
   height: 100%;
