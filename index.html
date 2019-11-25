@@ -1266,6 +1266,13 @@
       </div>
     </div>
     <script src="./assets/js/page-transition.js"></script>
-    <script></script>
+    <script>
+    function hideScreen() {
+        if (window.innerWidth < 1334) {
+          location.replace(`${window.location.origin}/mobile`);
+        }
+      }
+      hideScreen();
+    </script>
   </body>
 </html>
