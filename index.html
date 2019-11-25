@@ -1281,9 +1281,13 @@
     </div>
     <script src="./assets/js/page-transition.js"></script>
     <script>
-    function hideScreen() {
+      function hideScreen() {
         if (window.innerWidth < 1334) {
-          location.replace(`${window.location.origin}/mobile`);
+          if ((window.location.origin == "http://blurry-x-face.me")) {
+            location.replace(`${window.location.origin}/Equinox/mobile`);
+          } else {
+            location.replace(`${window.location.origin}/mobile`);
+          }
         }
       }
       hideScreen();
