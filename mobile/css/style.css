@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
 /* Scroll */
 ::-webkit-scrollbar {
   width: 5px;
@@ -27,9 +29,8 @@ body {
   font-weight: 300;
   font-size: 1rem;
   background: #232531;
-  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat" !important;
+  text-transform: uppercase;
 }
 
 ::-moz-selection {
@@ -55,7 +56,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 .h1,
 .h2,
 .h3,
@@ -1124,7 +1128,16 @@ h5,
 }
 #equinox-svg-background {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#equinox h5 {
+  font-weight: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
 }

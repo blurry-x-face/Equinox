@@ -87,7 +87,7 @@
     opacity: 1;
   }
   to {
-    -webkit-transform: scale(10) rotate(960deg) translate(-50%, -50%);
+    -webkit-transform: scale(10 ) rotate(960deg) translate(-50%, -50%);
     transform: scale(10) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
   }
