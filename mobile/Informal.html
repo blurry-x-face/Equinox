@@ -20,98 +20,124 @@
   <link rel="stylesheet" href="./css/style.css">
   <style>
     .informals {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  overflow: auto;
-  height: 70%; }
-
-#informals .container {
-  width: 300px;
-  height: 400px;
-  margin: 20px;
-  background: url("../assets/img/COMING (1).png");
-  background-color: black;
-  background-size: cover;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 5px #000;
-  box-shadow: #f7d5b0 0px 0px 20px;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-  #informals .container:hover {
-    box-shadow: inset rgba(124, 199, 212, 0.33) 0px 10px 20px; }
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  background: rgba(77, 77, 77, 0.9);
-  color: #fef5df;
-  opacity: 0;
-  transition: all 0.5s;
-  font-family: "Playfair Display", serif; }
-
-.items {
-  padding-left: 20px;
-  letter-spacing: 3px; }
-
-.head {
-  font-size: 30px;
-  line-height: 40px;
-  transform: translateY(40px);
-  transition: all 0.7s; }
-  .head hr {
-    display: block;
-    width: 0;
-    border: none;
-    border-bottom: solid 2px #fef5df;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    transition: all 0.5s; }
-
-.price {
-  font-size: 22px;
-  line-height: 10px;
-  font-weight: bold;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.7s; }
-  .price .old {
-    text-decoration: line-through;
-    color: #b3b3b3; }
-
-.cart {
-  font-size: 12px;
-  opacity: 0;
-  letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
-  transform: translateY(40px);
-  transition: all 0.7s; }
-  .cart i {
-    font-size: 16px; }
-  .cart span {
-    margin-left: 10px; }
-
-.container:hover .overlay {
-  opacity: 1; }
-  .container:hover .overlay .head {
-    transform: translateY(0px); }
-  .container:hover .overlay hr {
-    width: 75px;
-    transition-delay: 0.4s; }
-  .container:hover .overlay .price {
-    transform: translateY(0px);
-    transition-delay: 0.3s;
-    opacity: 1; }
-  .container:hover .overlay .cart {
-    transform: translateY(0px);
-    transition-delay: 0.6s;
-    opacity: 1; }
-
-/*# sourceMappingURL=formal-events.css.map */
-</style>
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      overflow: auto;
+      height: 70%;
+    }
+  
+    #informals .container {
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+      background: url("../assets/img/COMING (1).png");
+      background-color: black;
+      background-size: cover;
+      cursor: pointer;
+      -webkit-box-shadow: 0 0 5px #000;
+      box-shadow: #f7d5b0 0px 0px 20px;
+      transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  
+    #informals .container:hover {
+      box-shadow: inset rgba(124, 199, 212, 0.33) 0px 10px 20px;
+    }
+  
+    .overlay {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
+      background: rgba(77, 77, 77, 0.9);
+      color: #fef5df;
+      opacity: 0;
+      transition: all 0.5s;
+      font-family: "Playfair Display", serif;
+    }
+  
+    .items {
+      padding-left: 20px;
+      letter-spacing: 3px;
+    }
+  
+    .head {
+      font-size: 30px;
+      line-height: 40px;
+      transform: translateY(40px);
+      transition: all 0.7s;
+    }
+  
+    .head hr {
+      display: block;
+      width: 0;
+      border: none;
+      border-bottom: solid 2px #fef5df;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      transition: all 0.5s;
+    }
+  
+    .price {
+      font-size: 22px;
+      line-height: 10px;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s;
+    }
+  
+    .price .old {
+      text-decoration: line-through;
+      color: #b3b3b3;
+    }
+  
+    .cart {
+      font-size: 12px;
+      opacity: 0;
+      letter-spacing: 1px;
+      font-family: "Lato", sans-serif;
+      transform: translateY(40px);
+      transition: all 0.7s;
+    }
+  
+    .cart i {
+      font-size: 16px;
+    }
+  
+    .cart span {
+      margin-left: 10px;
+    }
+  
+    .container:hover .overlay {
+      opacity: 1;
+    }
+  
+    .container:hover .overlay .head {
+      transform: translateY(0px);
+    }
+  
+    .container:hover .overlay hr {
+      width: 75px;
+      transition-delay: 0.4s;
+    }
+  
+    .container:hover .overlay .price {
+      transform: translateY(0px);
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+  
+    .container:hover .overlay .cart {
+      transform: translateY(0px);
+      transition-delay: 0.6s;
+      opacity: 1;
+    }
+  
+    /*# sourceMappingURL=formal-events.css.map */
+  </style>
 </head>
 <body>
 
@@ -127,12 +153,10 @@
     </div>
 
     <header class="site-navbar py-3" role="banner">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-11 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><img style="height: 80px;width: 100px;margin-left: 45%;"
-              src="https://github.com/blurry-x-face/Equinox/blob/master/assets/img/Equinox_logo/equinox_logo_white.png?raw=true"><span class="text-primary"></span>
-              </a></h1>
+      <div class="container-fluid" style="padding: 0px">
+        <div class="row align-items-center" style="margin: 0px" >
+          <div class="col-11 col-xl-2" style="padding: 0px;">
+            <div class="mb-0 header-img"><a href="index.html" class="text-white h2 mb-0"><img style="height: 80px;margin-left: 25px;" src="../assets/img/Equinox_logo/equinox_logo_white.png"> </a></div>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -140,18 +164,19 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="formal.html">Formal Events</a></li>
-                <li><a href="Informal.html">Inormal Events</a></li>
+                <li class="active"><a href="Informal.html">Informal Events</a></li>
                 <li><a href="contact.html">Contacts</a></li>
-                <!-- <li class="cta"><a href="buy-tickets.html">Buy Tickets</a></li> -->
+                <li><a href="team.html">Team</a></li>
+                <li ><a href="sponsors.html">SPONSORS</a></li>
+                <!-- <li><a href="team.html">Team</a></li> -->
               </ul>
             </nav>
           </div>
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
-              class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
         </div>
       </div>
-  </div>
-  </header>
+    </header>
 
   <div class="site-section site-hero inner">
     <div class="container">
@@ -164,107 +189,120 @@
     </div>
   </div>
 
-  <div class="site-section">
+  <div class="informals" id="informals">
     <div class="container">
-      <div class="row mb-5">
-        <div class="informals" id="informals">
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="overlay">
-              <div class="items"></div>
-              <div class="items head">
-                <p>Equinox</p>
-                <hr>
-              </div>
-              <div class="items price">
-                <p class="new">Timings</p>
-              </div>
-              <div class="items cart">
-                <i class="fas fa-info" aria-hidden="true"></i>
-                <span>More information</span>
-              </div>
-            </div>
-          </div>
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
         </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Equinox</p>
+          <hr>
+        </div>
+        <div class="items price">
+          <p class="new">Timings</p>
+        </div>
+        <div class="items cart">
+          <i class="fas fa-info" aria-hidden="true"></i>
+          <span>More information</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <footer class="site-footer">
       <div class="container">
@@ -300,8 +338,8 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-                with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                  target="_blank">Colorlib</a>
+                with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="#!"
+                  >WebTeam@Equinox</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
