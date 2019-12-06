@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script>
+      function hideScreen() {
+        if (window.innerWidth < 1334) {
+          if (window.location.origin == "http://blurry-x-face.me") {
+            location.replace(`${window.location.origin}/Equinox/mobile`);
+          } else {
+            location.replace(`${window.location.origin}/mobile`);
+          }
+        }
+      }
+      hideScreen();
+    </script>
     <link
       rel="stylesheet/less"
       type="text/css"
@@ -761,6 +773,16 @@
                 <img
                   src="https://hackofiesta.github.io/assets/images/axios.png"
                 />
+                <img
+                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-3.png"
+                />
+                <img
+                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-4.png"
+                />
+                <img
+                  src="https://static.balsamiq.cloud/1345/landing/images/2bcadf409f1d0ebd680e0f127db3aea4.svg"
+                  style="background-color: #df0000;padding: 10px;border-radius: 15px;"
+                />
               </div>
             </div>
             <div class="contact-form">
@@ -781,7 +803,11 @@
           <div class="panel-content" style="justify-content: center">
             <h1>Formal Events</h1>
             <div class="informals" id="informals">
-              <div class="container">
+              <div
+                class="container"
+                id="hackofiesta"
+                style="background: url(./assets/img/events/Hackofiesta.png );    background-color: black;background-size: cover;"
+              >
                 <div class="overlay">
                   <div class="items"></div>
                   <div class="items head">
@@ -1266,13 +1292,5 @@
       </div>
     </div>
     <script src="./assets/js/page-transition.js"></script>
-    <script>
-    function hideScreen() {
-        if (window.innerWidth < 1334) {
-          location.replace(`${window.location.origin}/mobile`);
-        }
-      }
-      hideScreen();
-    </script>
   </body>
 </html>
