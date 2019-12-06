@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script>
       function hideScreen() {
-        if (window.innerWidth < 1334) {
+        if (window.innerWidth < 1250) {
           if (window.location.origin == "http://blurry-x-face.me") {
             location.replace(`${window.location.origin}/Equinox/mobile`);
           } else {
@@ -763,26 +763,36 @@
             <div>
               <h1>Our Sponsors</h1>
               <div class="sponsors">
-                <img
-                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-1.png"
-                />
-                <img
-                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-2.png"
-                />
-                <img src="https://getsetfoss.tech/assets/img/code.png" />
-                <img
-                  src="https://hackofiesta.github.io/assets/images/axios.png"
-                />
-                <img
-                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-3.png"
-                />
-                <img
-                  src="https://hackofiesta.github.io/assets/images/sponsor-logo-4.png"
-                />
-                <img
-                  src="https://static.balsamiq.cloud/1345/landing/images/2bcadf409f1d0ebd680e0f127db3aea4.svg"
-                  style="background-color: #df0000;padding: 10px;border-radius: 15px;"
-                />
+                <div class="sponsor-category">
+                  <h2>Platinum Sponsors</h2>
+                  <div class="sponsor-row">
+                    <img
+                      src="https://hackofiesta.github.io/assets/images/sponsor-logo-1.png"
+                    />
+                    <img
+                      src="https://hackofiesta.github.io/assets/images/sponsor-logo-2.png"
+                    />
+                    <img src="https://getsetfoss.tech/assets/img/code.png" />
+                    <img
+                      src="https://hackofiesta.github.io/assets/images/axios.png"
+                    />
+                  </div>
+                </div>
+                <div class="sponsor-category">
+                  <h2>Patreon Sponsors</h2>
+                  <div class="sponsor-row">
+                    <img
+                      src="https://hackofiesta.github.io/assets/images/sponsor-logo-3.png"
+                    />
+                    <img
+                      src="https://hackofiesta.github.io/assets/images/sponsor-logo-4.png"
+                    />
+                    <img
+                      src="https://static.balsamiq.cloud/1345/landing/images/2bcadf409f1d0ebd680e0f127db3aea4.svg"
+                      style="background-color: #df0000;padding: 10px;border-radius: 15px;"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <div class="contact-form">
@@ -823,7 +833,10 @@
                   </div>
                 </div>
               </div>
-              <div class="container">
+              <div
+                class="container"
+                style="background: url(./assets/img/events/dream_in_code.png);    background-color: black;background-size: contain;"
+              >
                 <div class="overlay">
                   <div class="items"></div>
                   <div class="items head">
@@ -839,7 +852,10 @@
                   </div>
                 </div>
               </div>
-              <div class="container">
+              <div
+                class="container"
+                style="background: url(./assets/img/events/incognito.png);    background-color: black;background-size: contain;"
+              >
                 <div class="overlay">
                   <div class="items"></div>
                   <div class="items head">
@@ -916,10 +932,7 @@
             <h1>Team</h1>
             <div class="contact-container">
               <div class="contact-card">
-                <img
-                  src="https://axios.iiitl.ac.in/wings/webDevelopment/images/team/Divy.jpg"
-                  alt="rhcp"
-                />
+                <img src="./assets/img/team/divy_khare.jpg" alt="rhcp" />
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Divy Khare</h3>
@@ -933,10 +946,7 @@
                 </div>
               </div>
               <div class="contact-card">
-                <img
-                  src="https://axios.iiitl.ac.in/wings/webDevelopment/images/team/vaibhav.jpeg"
-                  alt="rhcp"
-                />
+                <img src="./assets/img/team/vaibhav.jpg" alt="rhcp" />
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Vaibhav Gupta</h3>
@@ -950,10 +960,7 @@
                 </div>
               </div>
               <div class="contact-card">
-                <img
-                  src="https://axios.iiitl.ac.in/wings/competitiveCoding/images/team/GOVIND.jpg"
-                  alt="rhcp"
-                />
+                <img src="./assets/img/team/govinds.jpg" alt="rhcp" />
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Govind Dixit</h3>
@@ -967,10 +974,7 @@
                 </div>
               </div>
               <div class="contact-card">
-                <img
-                  src="https://axios.iiitl.ac.in/wings/machineLearning/images/team/saksham.jpg"
-                  alt="rhcp"
-                />
+                <img src="./assets/img/team/varshney.jpeg" alt="rhcp" />
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Saksham Varshney</h3>
@@ -984,10 +988,7 @@
                 </div>
               </div>
               <div class="contact-card">
-                <img
-                  src="https://axios.iiitl.ac.in/wings/competitiveCoding/images/team/nishant.jpg"
-                  alt="rhcp"
-                />
+                <img src="./assets/img/team/nishant.jpg" alt="rhcp" />
                 <div class="box-content">
                   <div class="empty"></div>
                   <h3 class="title">Nishant Raj Lather</h3>
@@ -1112,9 +1113,6 @@
           </div>
         </div>
         <div class="panel" data-x-pos="1" data-y-pos="0">
-          <span class="panel__nav panel__nav--left-top js-up js-left"
-            >About</span
-          >
           <span class="panel__nav panel__nav--up js-up js-left">About</span>
           <span class="panel__nav panel__nav--left js-left">Main</span>
           <span class="panel__nav panel__nav--left-down js-down js-left"
@@ -1130,7 +1128,7 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
+                      src="./assets/img/workshops/coming_soon.jpg"
                       alt="workshop"
                     />
                   </div>
@@ -1145,7 +1143,7 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
+                      src="./assets/img/workshops/coming_soon.jpg"
                       alt="workshop"
                     />
                   </div>
@@ -1160,7 +1158,7 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
+                      src="./assets/img/workshops/coming_soon.jpg"
                       alt="workshop"
                     />
                   </div>
@@ -1175,23 +1173,7 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
-                      alt="workshop"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Equinox</h1>
-                    <p>7 February 2020</p>
-                    <p>9:00 PM</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
+                      src="./assets/img/workshops/coming_soon.jpg"
                       alt="workshop"
                     />
                   </div>
@@ -1207,7 +1189,23 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSHR9sVrLkXNt8J81bQG4J6OWqvyGw72rfIQ2b7T5FLbsrYNLH"
+                      src="./assets/img/workshops/coming_soon.jpg"
+                      alt="workshop"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Equinox</h1>
+                    <p>7 February 2020</p>
+                    <p>9:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./assets/img/workshops/coming_soon.jpg"
                       alt="workshop"
                     />
                   </div>
