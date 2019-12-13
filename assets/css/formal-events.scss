@@ -12,19 +12,20 @@ $bg: #fef5df;
   width: 300px;
   height: 400px;
   margin: 20px;
-
   background: url("../img/COMING\ \(1\).png");
   background-color: black;
   background-size: cover;
   cursor: pointer;
-
   -webkit-box-shadow: 0 0 5px #000;
-  box-shadow: #f7d5b0 0px 0px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 255, 200, 0.603);
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+  
   &:hover {
     box-shadow: inset rgba(124, 199, 212, 0.33) 0px 10px 20px;
   }
+}
+#hackofiesta{
+  background: url("../img/events/Hackofiesta.png")
 }
 
 .overlay {
